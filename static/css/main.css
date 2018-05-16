@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+#app{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    -webkit-font-smoothing:antialiased;
+    background-color:#fff;
+    font:12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+    color:#666;
+}
+
+.clearfix:after{
+    visibility:hidden;
+    clear:both;
+    display:block;
+    content:".";
+    height:0;
+}
+.clearfix{
+    *zoom:1
+}
+
+.hide,.none{
+    display:none
+}
+
+.radius_5{
+    border-radius: 5px;
+}
+
+/*取消element弹出窗口箭头*/
+.el-popper[x-placement^=bottom] .popper__arrow{
+  display: none;
+}
+/*缩小element下拉窗口距离顶部距离*/
+.el-popper[x-placement^=bottom]{
+  margin-top: 0 !important;
+}
+
+/*公共title*/
+.common-title{
+  width: 100%;
+  line-height:1;
+  text-align: left;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
